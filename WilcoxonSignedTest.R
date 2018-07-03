@@ -1,12 +1,13 @@
 rm(list = ls())
 
 # reading data
-datasrc <- "Input/WilcoxTest.csv"
+datasrc <- "Input/X/WilcoxTest.csv"
 my_data <- read.csv(datasrc)
 my_data
 rownames(my_data) <- my_data[,1]
 my_data <- my_data[2:length(my_data)]
 my_data
+
 
 # Step 1: Get paired absolute differences
 X_A <- my_data[1]
